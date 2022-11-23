@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'love';
+            src: url('Mother Tongue.otf') format('opentype'), url('fabella-flower.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format()
+            - opentype(otf)
+            -truetype(ttf)
+            -embedded-opentype
+            -truetype-aat(Apple advanced typography)
+            -svg
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Love', Times, serif;
+            font-size: 10em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste distinctio quasi eos atque velit ullam assumenda provident blanditiis et. Nihil placeat commodi provident similique a et adipisci perspiciatis neque alias!</p>
+</body>
+</html>

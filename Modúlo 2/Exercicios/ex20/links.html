@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            Seletores personalizados.
+        #   = id
+        .   = classe
+        :   = pseudo-class
+        ::  = pseudo-element
+        >   = Clildren
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        a{
+            color: bisque;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: blueviolet;
+        }
+        a:hover{
+            color: cadetblue;
+        }
+        a:active{
+            color: aquamarine;
+        }
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: bisque;
+        }
+        a::before {
+            content: '▶;';
+           text-decoration: none;
+           font-weight: normal;
+           color: rgb(139, 213, 218);
+
+        }
+        .especial {
+            background-color: aquamarine;
+        }
+        .especial::before{
+            content: '▶' ;
+        }
+        .especial::after{
+            content: '◀' ;
+        }
+
+
+        
+    </style>
+    <!--Pseudo Class= : um ponto / elemento = :: dois pontos-->
+</head>
+<body>
+    <h1>Personalizando</h1>
+    <ul>
+                    <!--Self = Mesma página/ blank = abre uma nova-->
+        <li><a href="https://www.google.com.br/" class="especial" target="_blank">Site do Google</a></li>
+        <li><a href="https://www.youtube.com/?hl=pt" class="especial" target="_self">Site do youtube</a></li>
+        <li><a href="https://www.hostnet.com.br/" target="_self" class="especial">Site da hostnet</a></li>
+
+    </ul>
+    
+</body>
+</html>
