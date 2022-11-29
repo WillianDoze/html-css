@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+            table{
+                width: 450px;
+                border-collapse: collapse;
+                position: relative;
+            }
+            td, th{
+                border: 1px solid rgb(24, 23, 23);
+                padding: 10px;
+            }
+            thead, tfoot{
+                background-color: gray;
+                color: white;
+            }
+            thead > tr > th{
+                position: sticky;
+                top: -1px;
+                background-color: gray ;
+            }
+            /*Usar ODD OU EVEN; 2n-1; 2n; 3n .....*/
+            tbody > tr:nth-child(odd){
+                background-color: aliceblue;
+                font-weight: bold;
+            }
+            tbody > tr:nth-child(even){
+                background-color: cornsilk;
+                color: black;
+                text-decoration: underline;
+                
+            }
+        
+
+            td.num {
+                text-align: right;
+            }
+            caption {
+                background-color: rgba(148, 165, 182, 0.562);
+                color: white;
+                text-align: center;
+                font-size: 25px;
+            }
+        </style>
+
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia para tabelas grandes
+        Table
+            CAPTION
+            THEAD
+                TR,TD,TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+            <caption>Poupulação das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Poupulação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</th>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        <tbody>
+            <tr>
+                <td>Parana</th>
+                <td class="num">25 856 578</td>
+            </tr>
+            <tr>
+                <td>Distrito federal</td>
+                <td class="num">9 567 857</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">12 532 652</td>
+            </tr>
+            <tr>
+                <td>São Paulo</th>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        <tbody>
+            <tr>
+                <td>Parana</th>
+                <td class="num">25 856 578</td>
+            </tr>
+            <tr>
+                <td>Distrito federal</td>
+                <td class="num">9 567 857</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">12 532 652</td>
+            </tr>
+            <tr>
+                <td>São Paulo</th>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        <tbody>
+            <tr>
+                <td>Parana</th>
+                <td class="num">25 856 578</td>
+            </tr>
+            <tr>
+                <td>Distrito federal</td>
+                <td class="num">9 567 857</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">12 532 652</td>
+            </tr>
+            <tr>
+                <td>São Paulo</th>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        <tbody>
+            <tr>
+                <td>Parana</th>
+                <td class="num">25 856 578</td>
+            </tr>
+            <tr>
+                <td>Distrito federal</td>
+                <td class="num">9 567 857</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">12 532 652</td>
+            </tr>
+            <tr>
+                <td>São Paulo</th>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+        <tbody>
+            <tr>
+                <td>Parana</th>
+                <td class="num">25 856 578</td>
+            </tr>
+            <tr>
+                <td>Distrito federal</td>
+                <td class="num">9 567 857</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td class="num">12 532 652</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num"><strong>661.549.350</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam ut sapiente nesciunt sed quidem aperiam et, architecto id vero perspiciatis? Accusantium earum voluptate recusandae cupiditate possimus, corrupti architecto quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur optio quasi tempora, eaque, et error temporibus quia minima quod facilis est nisi, accusantium beatae ab officiis quas aliquid iusto aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed saepe minima corrupti illo, officiis molestias eligendi fugit, minus iste vel tempora fuga tenetur dolorum unde delectus alias hic, cum voluptatum.</p>
+</body>
+</html>
