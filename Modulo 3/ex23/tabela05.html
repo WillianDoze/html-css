@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            text-align: center;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            background-color: black;
+            color: white;
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px
+        }
+        col.cnome{
+            background-color: bisque;
+        }
+        row.csexo{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicios de Tabela</h1>
+        <table>
+            <colgroup>
+                <col class="cnome"> <!--Pode usar o span tambem exemplo... col class="nome" span "2", removendo linha abaixo"-->
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+            
+            <caption> Cadastro </caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="row">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <th>Ana Maria</th>
+                <th>F</th>
+                <th>25</th>
+                <th>Jornalista</th>
+            </tr>
+            <tr>
+                <th>Lucas</th>
+                <th>M</th>
+                <th>24</th>
+                <th>Programador</th>
+            </tr>
+            <tr>
+                <th>Juliana</th>
+                <th>F</th>
+                <th>43</th>
+                <th>Professora</th>
+            </tr>
+            <tr>
+                <th>Dirceu</th>
+                <th>M</th>
+                <th>52</th>
+                <th>Motorista</th>
+            </tr>
+            <tr>
+                <th>Caroline</th>
+                <th>F</th>
+                <th>27</th>
+                <th>Farmaceutica</th>
+            </tr>
+            <tr>
+                <th>Gustavo</th>
+                <th>M</th>
+                <th>18</th>
+                <th>Analista de Sistema</th>
+            </tr>
+        </table>
+</body>
+</html>
